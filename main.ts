@@ -78,12 +78,12 @@ async function makeMoney(tokensAndNumbers: { token: string, number: number }[]):
 
 // لیستی از توکن‌ها و شماره‌های مرتبط با آن‌ها
 const tokensAndNumbers = [
-  { token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjZlZjQ0MmU1MDIzMDkwNjNkODkwNzJmIiwiaWF0IjoxNzI3NjM0MTU0LCJleHAiOjE3Mjc3MjA1NTQsInR5cGUiOiJhY2Nlc3MifQ.64yqwppVTi3G2u_d-Z1I34GCnLKEmru-5cK2P8vi4BM", number:1 },
-  { token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjZlZTA0NWMxMjM0Y2ZkYTZlZDc5Yjk5IiwiaWF0IjoxNzI3NjM1Mjc5LCJleHAiOjE3Mjc3MjE2NzksInR5cGUiOiJhY2Nlc3MifQ.1BxU8cUyQhCS70oZfxj0Dy_-S-Wdm6J33HoD8HdESbQ", number:2 },
-  { token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjZlZTA0ZTEyYTgxMGEwYjQ1OGJjMjI1IiwiaWF0IjoxNzI3NjM1NDU0LCJleHAiOjE3Mjc3MjE4NTQsInR5cGUiOiJhY2Nlc3MifQ.bOTiYBZlGdkFf8z1s8nmQ6w1pUDSbler3MMoaeeJCWY", number:3 },
-  { token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjZlZTA2NWEyYTgxMGEwYjQ1OGQ0NWU0IiwiaWF0IjoxNzI3NjM2MzUyLCJleHAiOjE3Mjc3MjI3NTIsInR5cGUiOiJhY2Nlc3MifQ.slYK92rm2iEC7ZJJAulVT4M5MBKdwvcARpTQNkGmNao", number:4 },
-  { token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjZlZjQzNTc1MDIzMDkwNjNkODc4YzRhIiwiaWF0IjoxNzI3NjM2NDI0LCJleHAiOjE3Mjc3MjI4MjQsInR5cGUiOiJhY2Nlc3MifQ.IuLDMoiCUiIBuXYE0-0ai5fKT9FJYFnmyO-m-_gKdFY", number:5 },
-  { token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjZlYzEwNTc2M2Y3Mzg1MGY4M2ZkN2Y1IiwiaWF0IjoxNzI3NjM4NjcxLCJleHAiOjE3Mjc3MjUwNzEsInR5cGUiOiJhY2Nlc3MifQ.PctNJ1-DN3HksWdssNsWsBZ5haQ3WVoo5CBE_nZEpPM", number:6 },
+  { token:  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjZlZjQ0MmU1MDIzMDkwNjNkODkwNzJmIiwiaWF0IjoxNzI3NzI1ODcyLCJleHAiOjE3Mjc4MTIyNzIsInR5cGUiOiJhY2Nlc3MifQ.xboc8Nd7g15ZkBA_GzlU74lNsOsJoDb7gZWCHv2bDps", number:1 },
+  { token:  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjZlZTA0NWMxMjM0Y2ZkYTZlZDc5Yjk5IiwiaWF0IjoxNzI3NzI3Mzc4LCJleHAiOjE3Mjc4MTM3NzgsInR5cGUiOiJhY2Nlc3MifQ.S6cmqXggFr2wnLcz5zIpFDZFJVqw8783yHPciHkKHoI", number:2 },
+  { token:  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjZlZTA0ZTEyYTgxMGEwYjQ1OGJjMjI1IiwiaWF0IjoxNzI3NzI3NjY5LCJleHAiOjE3Mjc4MTQwNjksInR5cGUiOiJhY2Nlc3MifQ.tbfCf1I4nbg-7dZCWxCd6lap-3RsLS0HMJWEtWgDu9w", number:3 },
+  { token:  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjZlZTA2NWEyYTgxMGEwYjQ1OGQ0NWU0IiwiaWF0IjoxNzI3NzI3OTA1LCJleHAiOjE3Mjc4MTQzMDUsInR5cGUiOiJhY2Nlc3MifQ.6QMdrECE_wQPWyauqwgJtXQIWjxGuN9hrMvKtByQWu4", number:4 },
+  { token:  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjZlZTA2NWEyYTgxMGEwYjQ1OGQ0NWU0IiwiaWF0IjoxNzI3NzI4MTA4LCJleHAiOjE3Mjc4MTQ1MDgsInR5cGUiOiJhY2Nlc3MifQ._Uvs2HOHuCf7qLBze81IisTr6Ei1cInYjZEpjy9ECA0", number:5 },
+  { token:  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjZlZjQzNTc1MDIzMDkwNjNkODc4YzRhIiwiaWF0IjoxNzI3NzI4MjgwLCJleHAiOjE3Mjc4MTQ2ODAsInR5cGUiOiJhY2Nlc3MifQ.SMAAEPSPaAm5-jqFEu7LCa34xUwwNL8EEoJ01jMG5mQ", number:6 },
 
 ];
 
