@@ -28,7 +28,7 @@ async function getNextTime(headers: Record<string, string>): Promise<number> {
     if (!res.ok) {
       console.error(`Get missions request failed: ${res.status} ${res.statusText}`);
       const now = Math.floor(Date.now() / 1000);
-      return now + 10; // زمان پیش‌فرض
+      return now + 60; // زمان پیش‌فرض
     }
 
     const data = await res.json();
@@ -36,7 +36,7 @@ async function getNextTime(headers: Record<string, string>): Promise<number> {
   } catch (error) {
     console.error('Error in getNextTime:', error);
     const now = Math.floor(Date.now() / 1000);
-    return now + 10; // زمان پیش‌فرض
+    return now + 60; // زمان پیش‌فرض
   }
 }
 
