@@ -67,7 +67,9 @@ async function handleToken(authToken: string, tokenNumber: number): Promise<void
       }
     }
 
-    await delay(1000);
+    // زمان باقی‌مانده تا اجرای بعدی محاسبه می‌شود
+    const waitTime = Math.max(nextTime - now, 1); // حداقل 1 ثانیه تاخیر
+    await delay(waitTime * 1000); // تبدیل به میلی‌ثانیه
   }
 }
 
